@@ -1,0 +1,47 @@
+.TodoItem {
+  width: 100%;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+.TodoItem__done {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.TodoItem__text {
+  position: relative;
+  flex-grow: 1;
+  word-break: break-all;
+}
+.TodoItem__edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.TodoItem__edit:focus {
+  z-index: 1;
+  opacity: 1;
+}
+.TodoItem--completed {
+  opacity: 0.5;
+}
+.TodoItem--completed p {
+  text-decoration: line-through;
+}
+.TodoItem__buttons {
+  flex-shrink: 0;
+  margin-left: 5px;
+}

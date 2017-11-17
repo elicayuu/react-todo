@@ -1,0 +1,38 @@
+.TodoFilter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 5px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+}
+.TodoFilter__section {
+  display: flex;
+}
+.TodoFilter__filter {
+  display: block;
+  padding: 5px 10px;
+  border: 0;
+  background-color: rgba(238, 238, 238, 0.6);
+}
+.TodoFilter__filter:focus {
+  outline: 0;
+}
+.TodoFilter__filter--active {
+  background-color: rgba(238, 238, 238, 1);
+}
+.TodoFilter__clear {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  border: 1px solid #fff;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  cursor: pointer;
+}
+.TodoFilter__clear:active {
+  top: 5px;
+}
+.TodoFilter__clear:focus {
+  outline: 0;
+}
